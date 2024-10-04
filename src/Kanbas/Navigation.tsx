@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 export default function KanbasNavigation() {
   return (
     <div id="wd-kanbas-navigation">
@@ -14,7 +14,7 @@ export default function KanbasNavigation() {
         Dashboard
       </Link>
       <br />
-      <Link to="/Kanbas/Courses" id="wd-course-link">
+      <Link to="/Kanbas/Dashboard" id="wd-course-link">
         Courses
       </Link>
       <br />
