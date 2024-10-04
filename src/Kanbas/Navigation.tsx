@@ -1,9 +1,11 @@
-import { AiOutlineDashboard } from "react-icons/ai";
-import { IoCalendarOutline, IoSpeedometerOutline } from "react-icons/io5";
-import { LiaBookSolid, LiaCogSolid } from "react-icons/lia";
-import { FaCalendar, FaInbox, FaRegCircleUser } from "react-icons/fa6";
-import { Link } from "react-router-dom";
-import { MdOutlineAccountCircle } from "react-icons/md";
+import { AiOutlineDashboard } from 'react-icons/ai';
+import { IoCalendarOutline, IoSpeedometerOutline } from 'react-icons/io5';
+import { LiaBookSolid, LiaCogSolid } from 'react-icons/lia';
+import { FaCalendar, FaInbox, FaRegCircleUser } from 'react-icons/fa6';
+import { Link } from 'react-router-dom';
+import { MdOutlineAccountCircle } from 'react-icons/md';
+import { MdAllInbox } from 'react-icons/md';
+import { IoIosSettings } from 'react-icons/io';
 
 export default function KanbasNavigation() {
   return (
@@ -40,7 +42,7 @@ export default function KanbasNavigation() {
       </Link>
       <Link
         className="border-0 text-center bg-black text-white list-group-item"
-        to="/Kanbas/Courses"
+        to="/Kanbas/Courses1234/Home"
         id="wd-course-link"
       >
         <LiaBookSolid className="fs-1 text-danger" />
@@ -60,6 +62,8 @@ export default function KanbasNavigation() {
         to="/Kanbas/Inbox"
         id="wd-inbox-link"
       >
+        <MdAllInbox className="fs-1 text-danger" />
+        <br />
         Inbox
       </Link>
       <Link
@@ -67,6 +71,8 @@ export default function KanbasNavigation() {
         to="/Labs"
         id="wd-labs-link"
       >
+        <IoIosSettings className="fs-1 text-danger" />
+        <br />
         Labs
       </Link>
     </div>
