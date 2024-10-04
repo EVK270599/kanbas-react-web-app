@@ -1,39 +1,19 @@
-export default function TOC() {
-    return (
-      <ul>
-        <li>
-          <a id="wd-a" href="#/Labs">
-            Labs
-          </a>
-        </li>
-        <li>
-          <a id="wd-a1" href="#/Labs/Lab1">
-            Lab 1
-          </a>
-        </li>
-        <li>
-          <a id="wd-a2" href="#/Labs/Lab2">
-            Lab 2
-          </a>
-        </li>
-        <li>
-          <a id="wd-a3" href="#/Labs/Lab3">
-            Lab 3
-          </a>
-        </li>
-        <li>
-          <a id="wd-k" href="#/Kanbas">
-            Kanbas
-          </a>
-        </li>
-        <li>
-          <a
-            id="wd-github"
-            href="https://github.com/EVK270599/kanbas-react-web-app"
-          >
-            Kaustubha's GitHub
-          </a>
-        </li>
-      </ul>
-    );
-  }
+import { Routes, Route } from 'react-router';
+import Labs1 from './Lab1';
+import Labs2 from './Lab2';
+import TOC from './TOC';
+
+export default function Labs() {
+  return (
+    <div className="container-fluid">
+      <h1>Kaustubha Venkata Eluri</h1>
+      <TOC />
+      <h1>Labs</h1>
+      <Routes>
+        <Route path="Lab1" element={<Labs1 />} />
+        <Route path="Lab2" element={<Labs2 />} />
+        <Route path="Lab3" element={<h2>Lab 3</h2>} />
+      </Routes>
+    </div>
+  );
+}
