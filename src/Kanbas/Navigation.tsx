@@ -1,8 +1,14 @@
 import { Link } from 'react-router-dom';
+
 export default function KanbasNavigation() {
   return (
     <div id="wd-kanbas-navigation">
-      <a href="https://www.northeastern.edu/" id="wd-neu-link" target="_blank">
+      <a
+        href="https://www.northeastern.edu/"
+        id="wd-neu-link"
+        target="_blank"
+        rel="noopener noreferrer" // Added rel attribute for security
+      >
         Northeastern
       </a>
       <br />
