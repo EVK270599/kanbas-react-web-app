@@ -1,7 +1,6 @@
-import { AiOutlineDashboard } from 'react-icons/ai';
-import { IoCalendarOutline, IoSpeedometerOutline } from 'react-icons/io5';
-import { LiaBookSolid, LiaCogSolid } from 'react-icons/lia';
-import { FaCalendar, FaInbox, FaRegCircleUser } from 'react-icons/fa6';
+import { IoSpeedometerOutline } from 'react-icons/io5';
+import { LiaBookSolid } from 'react-icons/lia';
+import { FaCalendar } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
 import { MdOutlineAccountCircle } from 'react-icons/md';
 import { MdAllInbox } from 'react-icons/md';
@@ -19,6 +18,7 @@ export default function KanbasNavigation() {
         href="https://www.northeastern.edu/"
         id="wd-neu-link"
         target="_blank"
+        rel="noreferrer" // Added rel attribute here
       >
         Northeastern
       </a>
@@ -55,6 +55,7 @@ export default function KanbasNavigation() {
         id="wd-calendar-link"
       >
         <FaCalendar className="fs-1 text-danger" />
+        <br />
         Calendar
       </Link>
       <Link
